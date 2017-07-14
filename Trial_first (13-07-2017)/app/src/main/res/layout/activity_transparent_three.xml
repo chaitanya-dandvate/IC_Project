@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+
+    android:background="#BB000000"
+
+    tools:context="trial.trial_first.TransparentThree">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/mydialogbox"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:id="@+id/suggestionsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestions"
+                android:textColor="#6A0054"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/suggestionsClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:layout_alignParentRight="true"
+                android:textColor="#999999"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#999999"
+                android:layout_below="@id/suggestionsClose"
+                android:layout_marginTop="15dp"
+                />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:paddingTop="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            >
+
+            <TextView
+                android:id="@+id/suggestionsTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="Suggestion text here.."
+                android:textSize="15dp"
+                />
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingRight="25dp"
+            android:layout_marginTop="15dp"
+            >
+            <Button
+                android:id="@+id/suggestionsButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text=">"
+                android:textColor="#36002F"
+                android:background="@drawable/btn1"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

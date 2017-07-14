@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="trial.trial_first">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splashscreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login_new"
+            android:parentActivityName=".Splashscreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Splashscreen" />
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="Sign Up"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Login" />
+        </activity>
+        <activity
+            android:name=".Reset"
+            android:label="@string/title_activity_reset"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Login" />
+        </activity>
+        <activity
+            android:name=".TNCC"
+            android:label="Terms and Conditions"
+            android:parentActivityName=".SignUp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignUp" />
+        </activity>
+        <activity
+            android:name=".GeoFencing"
+            android:label="@string/title_activity_geo_fencing" />
+        <activity
+            android:name=".Assessment"
+            android:label="@string/title_activity_assessment"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Login" />
+        </activity>
+        <activity
+            android:name=".FindPerson"
+            android:label="@string/title_activity_find_person"
+            android:parentActivityName=".GeoFencing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="GeoFencing" />
+        </activity>
+        <activity
+            android:name=".TemporaryPage"
+            android:label="@string/title_activity_temporary_page"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Login" />
+        </activity>
+        <activity
+            android:name=".Congratulations"
+            android:label="@string/title_activity_congratulations"
+            android:parentActivityName=".TemporaryPage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="TemporaryPage" />
+        </activity>
+        <activity
+            android:name=".TransparentOne"
+            android:label="@string/title_activity_transparent_one"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".TransparentTwo"
+            android:label="@string/title_activity_transparent_two"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".TransparentThree"
+            android:label="@string/title_activity_transparent_three"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"></activity>
+    </application>
+
+</manifest>
